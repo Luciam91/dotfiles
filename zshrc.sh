@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 # Ensure ZSH is installed
-command -v zsh >/dev/null 2>&1 || { sudo apt-get install zsh -y }
+command -v zsh >/dev/null 2>&1
+if [ $? -ne 0 ];
+then
+	sudo apt-get install zsh -y
+fi
 
-mv zshrc/zshrc $HOME/.zshrc
-
+cp zshrc/zshrc $HOME/.zshrc
