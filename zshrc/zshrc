@@ -12,3 +12,6 @@ export ZSH_THEME="robbyrussell"
 plugins=(git composer symfony2 docker aws npm node)
 
 source $ZSH/oh-my-zsh.sh
+
+alias composer='docker run -it --rm -v $HOME:$HOME -e COMPOSER_HOME="$HOME/.composer" -u $UID -w `pwd` composer/composer:1.1-php5-alpine'
+
