@@ -1,0 +1,9 @@
+[user]
+  name = Scott Pringle
+  email = pringlesc91@gmail.com
+
+[push]
+  default = current
+
+[pull]
+  default = current

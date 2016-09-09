@@ -7,4 +7,4 @@ then
 	sudo apt-get install zsh -y
 fi
 
-cp zshrc/zshrc $HOME/.zshrc
+cp zshrc/config $HOME/.zshrc
