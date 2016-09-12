@@ -8,3 +8,5 @@ then
 fi
 
 cp zshrc/config $HOME/.zshrc
+
+source $HOME/.zshrc
