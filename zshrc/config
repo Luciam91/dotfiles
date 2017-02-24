@@ -18,6 +18,15 @@ alias iex='docker run -it --rm -v $HOME:$HOME -e HOME=$HOME -w `pwd` -u $UID eli
 alias php='docker run -it --rm -v $HOME:$HOME -e HOME=$HOME -w `pwd` -u $UID php:7'
 alias symfony_installer='docker run -it --rm  -u $(id -u):$(id -g) -v $(pwd):/app ypereirareis/symfony-installer new'
 
+# Docker
+alias dps='docker ps --format="table {{ .ID }}\t{{ .Names }}\t{{ .Image }}\t{{ .Status }}\t{{ .Ports }}\t{{ .Command }}"'
+alias dc='docker-compose'
+alias dcps='docker-compose ps'
+
+# Symfony
+alias docdiff='bin/console doc:mig:diff'
+alias docmig='bin/console doc:mig:mig'
+
 # powerlevel9k
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
