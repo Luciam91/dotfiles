@@ -9,6 +9,7 @@ then
 fi
 
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 cp zshrc/config $HOME/.zshrc
 
