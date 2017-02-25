@@ -7,3 +7,8 @@
 
 [pull]
   default = current
+
+[alias]
+	co = checkout
+	fco = !git fetch && git checkout
+	uncommit = reset HEAD^
