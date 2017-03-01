@@ -7,3 +7,6 @@
 
 [pull]
   default = current
+
+[help]
+  autocorrect = 1
