@@ -9,6 +9,8 @@
   default = current
 
 [alias]
-	co = checkout
-	fco = !git fetch && git checkout
-	uncommit = reset HEAD^
+  co = checkout
+  fco = !git fetch && git checkout
+  uncommit = reset HEAD^
+[help]
+  autocorrect = 1
