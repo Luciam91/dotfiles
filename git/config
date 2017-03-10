@@ -1,3 +1,5 @@
+[core]
+  excludesfile = ~/.gitignore
 [user]
   name = Scott Pringle
   email = pringlesc91@gmail.com

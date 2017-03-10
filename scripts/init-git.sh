@@ -8,3 +8,4 @@ then
 fi
 
 cp git/config $HOME/.gitconfig
+cp git/gitignore $HOME/.gitignore
