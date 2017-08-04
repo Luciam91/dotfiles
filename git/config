@@ -1,5 +1,6 @@
 [core]
   excludesfile = ~/.gitignore
+  editor = vim
 [user]
   name = Scott Pringle
   email = pringlesc91@gmail.com
