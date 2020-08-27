@@ -1,8 +1,8 @@
 export PATH=$HOME/.local/bin:$HOME/npm/bin:$PATH
-export GOPATH=~/go
+export GOPATH=$HOME/Code
 export GOPROXY=direct
 export PATH=$PATH:$GOPATH/bin
-export GOFLAGS=-mod=vendor
+export GOFLAGS=-mod=mod
 export GO111MODULE=on
 
  #Path to your oh-my-zsh configuration.
@@ -16,21 +16,10 @@ plugins=(git composer symfony2 docker aws npm node)
 
 source $ZSH/oh-my-zsh.sh
 
-# Why would I install these?
-alias composer='docker run -it --rm -v $HOME:$HOME -v /etc/passwd:/etc/passwd -e COMPOSER_HOME="$HOME/.composer" -u $UID --net=host -w `pwd` composer:latest'
-alias elixir='docker run -it --rm -v $HOME:$HOME -e HOME=$HOME -w `pwd` -u $UID elixir elixir'
-alias mix='docker run -it --rm -v $HOME:$HOME -e HOME=$HOME -w `pwd` -u $UID elixir mix'
-alias iex='docker run -it --rm -v $HOME:$HOME -e HOME=$HOME -w `pwd` -u $UID elixir iex'
-alias php='docker run -it --rm -v $HOME:$HOME -e HOME=$HOME -w `pwd` -u $UID --entrypoint=php php:7'
-alias symfony_installer='docker run -it --rm  -u $(id -u):$(id -g) -v $(pwd):/app ypereirareis/symfony-installer new'
-
 # Docker
 alias dps='docker ps --format="table {{ .ID }}\t{{ .Names }}\t{{ .Image }}\t{{ .Status }}\t{{ .Ports }}\t{{ .Command }}"'
 alias dc='docker-compose'
 alias dcps='docker-compose ps'
 
-# Symfony
-alias docdiff='bin/console doc:mig:diff'
-alias docmig='bin/console doc:mig:mig'
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export dev=$GOPATH/src
